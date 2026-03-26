@@ -85,7 +85,7 @@ function HeroSection() {
           fill
           priority
           className="object-cover hero-image"
-          style={{ objectPosition: 'center 20%' }}
+          style={{ objectPosition: 'center 65%' }}
         />
         <div className="absolute inset-0 hero-overlay" />
       </div>
