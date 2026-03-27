@@ -132,7 +132,7 @@ function HeroSection() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="font-body text-white/90 text-lg italic mb-8"
             >
-              Student of life. 3x Founder. Connector of dots.
+              Student of life. 3x Founder. Investor. Connector of dots.
             </motion.p>
 
             {/* Social row */}
