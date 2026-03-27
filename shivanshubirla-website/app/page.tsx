@@ -317,8 +317,7 @@ function InstagramSection() {
           <a
             href="https://instagram.com/birlashivanshu"
             target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gold hover:text-gold-dark transition-colors font-mono text-sm"
+className="aspect-square relative overflow-hidden"            className="flex items-center gap-2 text-gold hover:text-gold-dark transition-colors font-mono text-sm"
           >
             @birlashivanshu
             <ArrowRight size={14} />
@@ -332,16 +331,16 @@ function InstagramSection() {
           variants={staggerContainer}
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
         >
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+          {['/insta1.jpg', '/insta2.jpg', '/insta3.jpg', '/insta4.jpg', '/insta5.jpg', '/insta6.jpg'].map((src, i) => (
             <motion.div
-              key={i}
+              key={src}
               variants={scaleIn}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="aspect-square bg-cream flex items-center justify-center"
               style={{ borderRadius: '2px' }}
             >
               {/* Replace with Elfsight embed or real photos */}
-              <span className="text-text/30 font-mono text-xs">Photo {i}</span>
+              <span className="text-text/30 font-mono text-xs"><Image src={src} alt={`Instagram photo ${i + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-300" />
             </motion.div>
           ))}
         </motion.div>
