@@ -317,7 +317,7 @@ function InstagramSection() {
           <a
             href="https://instagram.com/birlashivanshu"
             target="_blank"
-className="aspect-square relative overflow-hidden"            className="flex items-center gap-2 text-gold hover:text-gold-dark transition-colors font-mono text-sm"
+className="flex items-center gap-2 text-gold hover:text-gold-dark transition-colors font-mono text-sm"
           >
             @birlashivanshu
             <ArrowRight size={14} />
@@ -336,7 +336,7 @@ className="aspect-square relative overflow-hidden"            className="flex it
               key={src}
               variants={scaleIn}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="aspect-square bg-cream flex items-center justify-center"
+              className="aspect-square relative overflow-hidden rounded-sm"
               style={{ borderRadius: '2px' }}
             >
               {/* Replace with Elfsight embed or real photos */}
@@ -347,7 +347,7 @@ className="aspect-square relative overflow-hidden"            className="flex it
 
         <p className="mt-8 text-center font-mono text-xs text-text/50">
           {/* To connect Instagram: Add Elfsight widget or replace with actual photos */}
-          Connect via Elfsight or add photos directly
+          View more on Instagram
         </p>
       </div>
     </section>
