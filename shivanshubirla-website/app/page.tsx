@@ -267,7 +267,7 @@ function PassionsSection() {
           transition={{ duration: 0.6 }}
           className="font-display text-4xl md:text-5xl text-text mb-16"
         >
-          Passionate about.
+          What drives me.
         </motion.h2>
 
         <motion.div
@@ -360,7 +360,7 @@ function RecentWritingSection() {
     {
       slug: 'why-i-started-this-site',
       title: 'Why I started this site',
-      date: '2025-06-26',
+      date: '2026-03-27',
       category: 'Life',
       excerpt: 'A place to keep a record of thoughts, insights, and things I\'m learning — in no particular order.'
     }
