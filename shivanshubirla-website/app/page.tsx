@@ -339,8 +339,7 @@ className="flex items-center gap-2 text-gold hover:text-gold-dark transition-col
               className="aspect-square relative overflow-hidden rounded-sm"
               style={{ borderRadius: '2px' }}
             >
-              {/* Replace with Elfsight embed or real photos */}
-              <span className="text-text/30 font-mono text-xs"><Image src={src} alt={`Instagram photo ${i + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-300" />
+              <Image src={src} alt={`Instagram photo ${i + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-300" />
             </motion.div>
           ))}
         </motion.div>
