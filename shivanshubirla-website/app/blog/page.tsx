@@ -17,11 +17,18 @@ const categories = [
 // Hardcoded posts for now - in production this would come from MDX
 const allPosts = [
   {
+    slug: 'tips-cant-be-your-thesis',
+    title: "Tips Can't Be Your Thesis",
+    date: '2026-03-29',
+    category: 'Investments',
+    excerpt: 'The market humbles everyone. What you do with that humbling is the only question that matters.',
+  },
+  {
     slug: 'why-i-started-this-site',
     title: 'Why I started this site',
-    date: '2025-06-26',
+    date: '2026-03-27',
     category: 'Life',
-    excerpt: 'A place to keep a record of thoughts, insights, and things I\'m learning — in no particular order.'
+    excerpt: 'A place to keep a record of thoughts, insights, and things I\'m learning — in no particular order.',
   }
 ]
 
