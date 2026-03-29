@@ -152,7 +152,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               <div>
                 <h4 className="font-display text-xl text-text mb-1">Shivanshu Birla</h4>
                 <p className="font-body text-sm text-text/60 mb-3">
-                  Investor, reader, traveler. Writing about things I'm learning.
+                  Founding Partner at Makia Capital, a SEBI-registered AIF and boutique investment bank. Alumnus of the Indian School of Business (ISB) and CFA Charterholder.
                 </p>
                 <div className="flex gap-4">
                   <a
@@ -172,6 +172,47 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     <Linkedin size={18} />
                   </a>
                 </div>
+              </div>
+            </div>
+
+            {/* Newsletter signup */}
+            <div className="mt-12 pt-12 border-t border-text/10">
+              <div className="max-w-md">
+                <h4 className="font-display text-xl text-text mb-2">Get new essays in your inbox.</h4>
+                <p className="font-body text-sm text-text/50 mb-5">No noise. Just writing, when it's ready.</p>
+                <form
+                  onSubmit={async (e) => {
+                    e.preventDefault()
+                    const form = e.currentTarget
+                    const email = (form.elements.namedItem('email') as HTMLInputElement).value
+                    try {
+                      await fetch('/api/newsletter', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email }),
+                      })
+                      form.reset()
+                      alert('You\'re subscribed!')
+                    } catch {
+                      alert('Something went wrong. Please try again.')
+                    }
+                  }}
+                  className="flex gap-3"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="your@email.com"
+                    className="flex-1 px-4 py-2.5 bg-transparent border border-text/20 text-text placeholder:text-text/30 font-mono text-sm focus:outline-none focus:border-gold transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    className="px-5 py-2.5 bg-gold text-white font-mono text-xs tracking-wider hover:bg-gold-dark transition-colors"
+                  >
+                    Subscribe
+                  </button>
+                </form>
               </div>
             </div>
           </footer>
